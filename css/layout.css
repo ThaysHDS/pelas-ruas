@@ -1,0 +1,45 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+#sobre {
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.texto-ajustado {
+  padding-top: 100px;
+  text-align: left;
+}
+
+.container-limite {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.vertical-slider {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.fade-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fade-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+

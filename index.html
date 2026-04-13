@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pelas Ruas | Street Photo</title>
+
+  <meta name="description" content="Pelas Ruas é um projeto de fotografia urbana, onde dois amigos capturam momentos únicos nas ruas da cidade, mostrando a beleza da vida cotidiana e a arte da street photography." />
+  <meta name="keywords" content="fotografia de rua, street photography, amizade, fotografia urbana, Pelas Ruas, momentos urbanos, fotos de cidade" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Luiz Henrique, Willian Villares, Thays Henriques" />
+  <meta name="google-site-verification" content="EC2dTvkLOH5utfjqkQ4s7Yy8jETCyixcqJ5y89_7ZSg" />
+  <link rel="canonical" href="https://pelasruas.netlify.app/" />
+  <meta name="theme-color" content="#000000" />
+
+  <meta property="og:title" content="Pelas Ruas - Fotografia de Rua e Momentos Urbanos" />
+  <meta property="og:description" content="Descubra a beleza urbana através das lentes de dois amigos apaixonados por fotografia de rua." />
+  <meta property="og:image" content="https://iili.io/F1Yob2f.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://pelasruas.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pelas Ruas" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pelas Ruas - Fotografia de Rua e Momentos Urbanos" />
+  <meta name="twitter:description" content="Descubra a beleza urbana através das lentes de dois amigos apaixonados por fotografia de rua." />
+  <meta name="twitter:image" content="https://iili.io/F1Yob2f.png" />
+  <meta name="twitter:creator" content="@SeuTwitter" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pelas Ruas",
+    "description": "Projeto fotográfico de dois amigos que capturam momentos únicos nas ruas da cidade.",
+    "creator": [
+      { "@type": "Person", "name": "Luiz Henrique" },
+      { "@type": "Person", "name": "Willian Villares" },
+      { "@type": "Person", "name": "Thays Henriques" }
+    ],
+    "image": "https://iili.io/F1Yob2f.png",
+    "url": "https://pelasruas.netlify.app/",
+    "sameAs": [
+      "https://www.instagram.com/pelasruas",
+      "https://www.linkedin.com/in/pelasruas"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+
+<body>
+  <a href="#" class="scroll-top-btn" aria-label="Voltar ao topo da página">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <header class="navbar navbar-expand-lg navbar-light px-3 px-lg-5 align-items-center">
+    <a class="navbar-brand" href="#">
+      <img id="logo-img" src="img/logo.svg" alt="Logo Pelas Ruas - Street Photography" height="44" width="120" />
+    </a>
+
+    <div class="d-flex align-items-center d-lg-none ms-auto">
+      <button id="toggle-dark" class="btn me-2 px-3 py-2" title="Alternar tema" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <button id="menu-toggle" class="btn px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu de navegação">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav d-flex flex-row align-items-center gap-2">
+
+        <li class="nav-item d-none d-lg-flex align-items-center">
+          <button id="toggle-dark-desktop" class="btn p-0" title="Alternar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link p-0" href="#sobre">Sobre</a>
+        </li>
+
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link p-0" href="#fotos">Fotos</a>
+        </li>
+
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link p-0" href="#contato">Contato</a>
+        </li>
+
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-fluid px-0 d-md-block d-none">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-12 col-md-4">
+          <a href="img/Will1.jpg" data-fancybox="galeria-principal" data-caption="Fotografia por Willian">
+            <div class="img-hover h-100">
+              <img src="img/Will1.jpg" class="w-100 h-100 object-fit-cover" alt="Copa de árvore florida em destaque, fotografia por Willian" />
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="img/Luiz2.jpg" data-fancybox="galeria-principal" data-caption="Fotografia tirada por Luiz" data-bs-toggle="tooltip" data-bs-placement="right" title="Clique para ampliar a imagem">
+            <div class="img-hover custom-tall-center position-relative">
+              <img src="img/Luiz2.jpg" class="w-100 h-100 object-fit-cover" alt="Cena urbana ao entardecer - Foto por Luiz" />
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <a href="img/Will2.jpg" data-fancybox="galeria-principal" data-caption="Fotografia por Willian">
+            <div class="img-hover h-100">
+              <img src="img/Will2.jpg" class="w-100 h-100 object-fit-cover" alt="Copa de árvore florida em destaque, fotografia por Willian" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="vertical-slider d-md-none">
+      <div class="fade-slide">
+        <img src="img/Will1.jpg" alt="Foto por Willian" fetchpriority="high">
+      </div>
+      <div class="fade-slide">
+        <img src="img/Luiz2.jpg" alt="Foto por Luiz">
+      </div>
+      <div class="fade-slide">
+        <img src="img/Will2.jpg" alt="Foto por Willian">
+      </div>
+    </section>
+
+    <section class="container container-limite my-5 py-2">
+      <div id="secao2" class="row justify-content-center align-items-center g-5">
+        <div id="sobre" class="col-md-8 texto-ajustado" data-aos="fade-left">
+          <p class="lead">
+            <strong>Willian e Luiz</strong> são dois amigos de longa data que, além de compartilharem boas conversas, têm em comum a paixão pela fotografia.
+            Juntos, exploram a cidade, registrando os pequenos grandes momentos do cotidiano com suas câmeras, seja em um pôr do sol na praça, em um café descontraído ou durante um passeio aleatório pelas ruas.
+            <br /><br />
+            Para eles, a fotografia vai além de uma simples imagem: é uma forma de eternizar memórias, de se conectar com o mundo ao redor e de transformar momentos simples em grandes histórias.
+            <br /><br />
+            Essas aventuras fotográficas, repletas de risos, descobertas e boas energias, inspiraram os amigos a convidarem você a também registrar os seus próprios momentos especiais. Seja para celebrar o cotidiano, criar uma galeria pessoal ou simplesmente capturar a beleza do instante, estamos aqui para ajudar você a transformar suas experiências em lembranças inesquecíveis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax-section d-flex justify-content-center align-items-center text-center">
+      <h2 class="text-white display-5 fw-semibold shadow-text">“A beleza está nos detalhes do cotidiano.”</h2>
+    </section>
+
+    <section id="fotos" class="container my-5">
+      <div class="text-center mb-4">
+        <p class="texto-cinza fst-italic">
+          <i class="fas fa-mouse-pointer me-2"></i>As imagens abaixo são interativas, clique para ver em tela cheia e apreciar os detalhes.
+        </p>
+      </div>
+      <div class="row g-3 justify-content-center" id="interactive-gallery">
+        <div class="gallery-item col-6 col-md-3">
+          <a href="img/Luiz5.jpg" data-fancybox="galeria7" data-caption="Fotografia tirada por Luiz">
+            <div class="tilt-cell">
+              <img src="img/Luiz5.jpg" alt="Folhas iluminadas pelo sol, fotografia de Luiz" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3">
+          <a href="img/Will5.jpg" data-fancybox="galeria7" data-caption="Fotografia por Willian">
+            <div class="tilt-cell">
+              <img src="img/Will5.jpg" alt="Cafeteira francesa em cafeteria aconchegante, fotografia por Willian" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3">
+          <a href="img/Will3.jpg" data-fancybox="galeria7" data-caption="Fotografia por Willian">
+            <div class="tilt-cell">
+              <img src="img/Will3.jpg" alt="Frente de carro estacionado em rua, fotografia por Willian" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3 d-none d-sm-block fade-in">
+          <a href="img/Luiz1.jpg" data-fancybox="galeria7" data-caption="Fotografia tirada por Luiz">
+            <div class="tilt-cell">
+              <img src="img/Luiz1.jpg" alt="Céu azul com nuvens rosadas ao entardecer, fotografia por Luiz" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3 d-none d-sm-block fade-in">
+          <a href="img/Will6.jpg" data-fancybox="galeria7" data-caption="Fotografia por Willian">
+            <div class="tilt-cell">
+              <img src="img/Will6.jpg" alt="Gotas de chuva sobre para-brisa de carro, fotografia por Willian" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3 d-none d-sm-block fade-in">
+          <a href="img/Will7.jpg" data-fancybox="galeria7" data-caption="Fotografia por Willian">
+            <div class="tilt-cell">
+              <img src="img/Will7.jpg" alt="Carro da polícia em movimento pela rua, fotografia por Willian" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3 d-none d-sm-block fade-in">
+          <a href="img/Will4.jpg" data-fancybox="galeria7" data-caption="Fotografia por Willian">
+            <div class="tilt-cell">
+              <img src="img/Will4.jpg" alt="Vista noturna da cidade iluminada, fotografia por Willian" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item col-6 col-md-3 d-none d-sm-block fade-in">
+          <a href="img/Luiz7.jpg" data-fancybox="galeria7" data-caption="Fotografia tirada por Luiz">
+            <div class="tilt-cell">
+              <img src="img/Luiz7.jpg" alt="Entardecer com luz do sol iluminando coqueiros, fotografia por Luiz" class="img-fluid rounded">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-3 d-sm-none">
+        <button id="verMaisBtn" class="btn btn-outline-dark btn-sm">Veja mais</button>
+      </div>
+    </section>
+
+    <section class="container my-5 text-center">
+      <p class="experience-text mt-3 px-3">
+        Venha viver essa experiência com a gente e registrar, de forma única, seus momentos mais autênticos. Porque, assim como Willian e Luiz, todos temos histórias que merecem ser contadas através da lente de uma câmera.
+      </p>
+      <div class="photo-gallery">
+        <div class="photo-reveal">
+          <img src="img/LuizH.jpg" alt="Luiz Henrique" class="reveal-image" />
+          <p class="caption mt-3">Fotógrafo <br> Luiz</p>
+        </div>
+        <div class="photo-reveal">
+          <img src="img/Willian.jpg" alt="Willian Villares" class="reveal-image" />
+          <p class="caption mt-3">Fotógrafo <br> Willian</p>
+        </div>
+        <div class="photo-reveal">
+          <img src="img/Thays.jpg" alt="Thays Henriques" class="reveal-image" />
+          <p class="caption mt-3">Desenvolvedora <br> Thays</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-md-4 text-center text-md-start">
+          <img src="img/logo_f5f5f5.svg" alt="Pelas Ruas" height="60" />
+          <p class="mt-3 small">
+            Fotografia de rua capturando momentos reais
+          </p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <h5 class="footer-heading mb-3">Links rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#sobre" class="text-light text-decoration-none d-block mb-1">Sobre</a></li>
+            <li><a href="#fotos" class="text-light text-decoration-none d-block mb-1">Fotos</a></li>
+            <li><a href="#contato" class="text-light text-decoration-none d-block">Contato</a></li>
+          </ul>
+        </div>
+
+        <div id="contato" class="col-md-4 text-center text-md-end">
+          <h5 class="footer-heading mb-3">Contato</h5>
+
+          <p class="mb-1">
+            <a href="https://www.instagram.com/pelasruas.photo/" target="_blank" class="text-light text-decoration-none">
+              Pelas Ruas | Street Photo
+            </a>
+          </p>
+
+          <p class="mb-1">
+            <a href="https://www.instagram.com/streetbyluiz/" target="_blank" class="text-light text-decoration-none">
+              @streetbyluiz
+            </a> /
+            <a href="https://www.instagram.com/wvillares.photos/" target="_blank" class="text-light text-decoration-none">
+              @wvillares.photos
+            </a>
+          </p>
+
+          <p class="mb-0 small">Bauru, SP</p>
+        </div>
+      </div>
+
+      <hr class="border-light opacity-25 my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start small">
+
+        <p class="mb-2 mb-md-0">
+          &copy; 2025 Pelas Ruas. Todos os direitos reservados.
+        </p>
+
+        <p class="mb-0">
+          Desenvolvido por
+          <a href="https://thayshds.netlify.app/" target="_blank" class="text-light text-decoration-none">
+            Thays Henriques
+          </a>
+          •
+          <a href="https://www.instagram.com/thayshds/" target="_blank" class="text-light text-decoration-none">
+            @thayshds
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

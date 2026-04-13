@@ -1,0 +1,114 @@
+@media (max-width: 576px) {
+    footer .logo-footer {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  .slogan-footer {
+    margin-top: 0;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .parallax-section {
+    background-attachment: scroll;
+    height: 50vh;
+  }
+
+  .imagem-ajustada-wrapper {
+    top: 0;
+    left: 0;
+  }
+
+  .texto-ajustado {
+    margin-left: 0;
+  }
+
+  .img-hover {
+    height: 200px;
+  }
+
+  .col-md-4:nth-child(2) img {
+    transform: scale(1.05);
+  }
+
+  .imagem-ajustada-wrapper {
+    display: none;
+  }
+
+  #sobre p.lead {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #sobre.texto-ajustado {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .photo-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .photo-reveal {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    margin: 0;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .tilt-cell {
+    transition: transform 0.2s ease;
+    will-change: transform;
+    perspective: 1000px;
+  }
+
+  .reveal-image {
+    filter: grayscale(0%) blur(0);
+    opacity: 1;
+  }
+
+  #secao2 {
+    margin-top: 1rem;
+  }
+
+  #rodape {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-reveal:hover .reveal-image {
+    filter: grayscale(0%) blur(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,233 @@
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-radius: 80px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--cor-clara);
+  color: var(--cor-escura);
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--cor-clara);
+  color: var(--cor-escura);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: none; 
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top-btn i {
+  position: relative;
+  top: 6px;   
+  left: 13px;   
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.navbar {
+  align-items: center;
+  min-height: 68px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: 0 1px 0 var(--nav-border), 0 4px 20px rgba(0,0,0,0.04);
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+  color: var(--nav-link-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  transition: background 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus-visible {
+  background: var(--nav-pill-hover);
+  color: var(--nav-link-color);
+}
+
+.navbar-nav .nav-link:focus-visible {
+  outline: 2px solid var(--nav-accent);
+  outline-offset: 2px;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 2px;
+  background: var(--nav-accent);
+  border-radius: 2px;
+}
+
+#toggle-dark,
+#toggle-dark-desktop {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--nav-link-color);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: none;
+}
+
+#toggle-dark:hover,
+#toggle-dark-desktop:hover {
+  background: var(--nav-pill-hover);
+  transform: rotate(15deg);
+}
+
+#toggle-dark:focus-visible,
+#toggle-dark-desktop:focus-visible {
+  outline: 2px solid var(--nav-accent);
+  outline-offset: 2px;
+}
+
+#menu-toggle {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  background: var(--nav-pill-active);
+  color: var(--nav-link-color);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  box-shadow: none;
+}
+
+#menu-toggle:hover {
+  background: var(--nav-pill-hover);
+}
+
+#menu-toggle:focus-visible {
+  outline: 2px solid var(--nav-accent);
+  outline-offset: 2px;
+}
+
+#navMenu {
+  background: var(--nav-bg-scrolled);
+  margin-right: -20px;
+  border-top: 1px solid var(--nav-border);
+  padding: 0.5rem;
+}
+
+#navMenu .nav-link {
+  border-radius: 8px;
+  margin-bottom: 2px;
+  padding: 0.6rem 1rem !important;
+}
+
+#logo-img {
+  height: 44px;
+  width: auto;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-brand:hover #logo-img {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.img-hover {
+  overflow: hidden;
+  position: relative; 
+}
+
+.img-hover img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img-hover:hover img {
+  transform: scale(1.05);
+  filter: brightness(85%);
+}
+
+.tilt-cell {
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--cor-escura);
+  transition: box-shadow 0.3s;
+}
+
+.tilt-cell:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tilt-cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.tilt-cell:hover img {
+  transform: scale(1.08);
+  filter: brightness(90%);
+}
+
+.sortable-ghost {
+  opacity: 0.5;
+}
+
+footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+}
+
+.footer-line {
+  border-top: 2px solid var(--cor-clara);
+}
+
+.slogan-footer {
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+footer h4.footer-heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
