@@ -14,12 +14,12 @@
   }
 
   .navbar-nav .nav-link {
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
   }
 
   .section-title {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -103,6 +103,14 @@
 
   #rodape {
     margin-top: 1.5rem;
+  }
+  #navMenu {
+    text-align: center;
+    padding-left: 45px;
+  }
+
+  #navMenu .nav-link {
+    display: inline-block;
   }
 }
 
